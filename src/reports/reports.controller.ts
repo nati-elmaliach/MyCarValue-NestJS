@@ -20,7 +20,7 @@ export class ReportsController {
 
 
   @Get()
-  getEstimate(@Query() query: GetEstimateDto) { // how to validate those exact fields ?
+  getEstimate(@Query() query: GetEstimateDto) { // how to validate those exact fields but partial?
     return this.reportsService.createEstimate(query);
 
   }
